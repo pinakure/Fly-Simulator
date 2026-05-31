@@ -1,0 +1,13 @@
+networks:
+  proxy_sql-network:
+    external: true
+services:
+  flysim-service:
+    image: nginx:alpine
+    container_name: flysim
+    hostname: flysim
+    networks:
+      - proxy_sql-network
+    volumes:
+      - /src/flysim/web:/usr/share/nginx/html:ro
+    restart: unless-stopped

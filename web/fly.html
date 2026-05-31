@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fly Simulator</title>
+        <script src="vpu.js"></script>
+        <script src="simulation.js"></script>
+        <script src="fly.js"></script>
+        <script src="swarm.js"></script>
+        <style>
+            html {
+                width: 100%;
+                height: 100%;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+            body {
+                width: 100%;
+                height: 100%;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+            canvas {
+                width: 100%;
+                height: 100%;
+                image-rendering: pixelated;
+                background: #101010;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="320" height="240"></canvas>
+    </body>
+    <script>
+        VPU.init();
+        Swarm.init();
+        setInterval(function(){Swarm.loop()}, Swarm.update_speed);
+        setInterval(function(){Swarm.render()}, Swarm.redraw_speed);
+    </script>
+</html>
