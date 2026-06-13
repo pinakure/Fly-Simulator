@@ -1,10 +1,4 @@
-Dumb Fly Simulator.
-Up to you to guess what this program does (or doesn't).
-Cheers.
-Test @ https://flysim.iskarion.ddns.net
-
-
-# Fly-SimulatorCells
+# Fly-Simulator
 ![STATUS: Complete](https://img.shields.io/badge/status-complete-green)
 ![javascript](https://img.shields.io/badge/javascript-brown?logo=javascript)
 ![CSS](https://img.shields.io/badge/css-brown?logo=css)
